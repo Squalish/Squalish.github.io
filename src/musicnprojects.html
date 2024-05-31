@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squalish's Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-content">
+        <div class="window active" style="max-width: 640px; max-height: 480px;">
+            <div class="title-bar">
+            <div class="title-bar-text">My Projects</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+            </div>
+
+            <div class="window-body has-space">
+                <section class="tabs" style="min-width: 520px; max-width: 520px; min-height: 360px; max-height: 360px">
+                    <menu role="tablist" aria-label="Sample Tabs">
+                      <button role="tab" aria-controls="tab-A" aria-selected="true">Music</button>
+                      <button role="tab" aria-controls="tab-B">Games</button>
+                      <button role="tab" aria-controls="tab-C">Other Projects</button>
+                    </menu>
+                    <!-- the tab content -->
+                    <article role="tabpanel" id="tab-A" style="min-width: 490px; max-width: 490px; min-height: 300px; max-height: 300px">
+                        <div class="has-scrollbar" style="width: 500px; height: 300px; overflow: auto">
+                            <div class="div-music">
+                                <div class="div-music-art-and-info">
+                                    <img src="https://i1.sndcdn.com/artworks-ana5zQyEStcSMpk9-5Fnq7g-t500x500.jpg" width="128" height="128">
+                                    <div class="div-music-info">
+                                        <div class="div-music-info-name">
+                                            <p><strong>Endless Storage</strong></p>
+                                        </div>
+                                        <div class="div-music-info-artist">
+                                            <p>Squalish</p>
+                                        </div>
+                                        <div class="div-music-info-description">
+                                            <p>
+                                                
+                                            </p>
+                                            <div class="has-scrollbar" style="width: 340px; height: 48px; overflow: auto">
+                                                I was experimenting with the EarthBound soundfont but decided to just make this short and simple synthwave kind of music :3
+                                            </div>
+                                            <p>
+                                                
+                                            </p>
+                                        </div>
+                                        <div class="div-music-info-platforms">
+                                            <a href="https://www.youtube.com/watch?v=8DSBGXMXQEk">YouTube</a>
+                                            <a href="https://soundcloud.com/squalish/endless-storage">SoundCloud</a>
+                                            <a href="https://open.spotify.com/track/0lU7hgpyj2V7Ig53TEr8fD?si=90f8cbbaa88b410d">Spotify</a>
+                                            <a href="https://squalish.bandcamp.com/track/endless-storage">Bandcamp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="div-music">
+                                <div class="div-music-art-and-info">
+                                    <img src="https://i1.sndcdn.com/artworks-2DqrxEznoi0dXya4-KMm58Q-t500x500.jpg" width="128" height="128">
+                                    <div class="div-music-info">
+                                        <div class="div-music-info-name">
+                                            <p><strong>Violence</strong></p>
+                                        </div>
+                                        <div class="div-music-info-artist">
+                                            <p>Squalish</p>
+                                        </div>
+                                        <div class="div-music-info-description">
+                                            <p>
+                                                
+                                            </p>
+                                            <div class="has-scrollbar" style="width: 340px; height: 48px; overflow: auto">
+                                                Long story short.
+                                                I had a mental breakdown at school and then I made this cuz yeah I was still angry even after I came back home
+                                                (not my fault that my teacher drove me insane that day).
+                                            </div>
+                                            <p>
+                                                
+                                            </p>
+                                        </div>
+                                        <div class="div-music-info-platforms">
+                                            <a href="https://www.youtube.com/watch?v=iqx4QEYAoNs">YouTube</a>
+                                            <a href="https://soundcloud.com/squalish/violence">SoundCloud</a>
+                                            <a href="https://open.spotify.com/track/068cRWEFbfBHIoxR4A6WGR?si=493749fa24bb45ab">Spotify</a>
+                                            <a href="https://squalish.bandcamp.com/track/violence">Bandcamp</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <p>I promise I'll add more soon. (I'm kinda lazy)</p>
+                        </div>
+                    </article>
+                    <article role="tabpanel" id="tab-B" hidden style="min-width: 490px; max-width: 490px; min-height: 300px; max-height: 300px">
+                      <p>COMING SOON!</p>
+                      <p>anyway heres a leaked footage of squalish himself being lazy and probably eeping.</p>
+                      <img src="../assets/images/squish_eep.png" width="490" height="220">
+                      </fieldset>
+                    </article>
+                    <article role="tabpanel" id="tab-C" hidden style="min-width: 490px; max-width: 490px; min-height: 300px; max-height: 300px">
+                        <p>COMING SOON!</p>
+                        <p>anyway heres a leaked footage of squalish himself being lazy and probably eeping.</p>
+                        <img src="../assets/images/squish_eep.png" width="490" height="220">
+                    </article>
+                  </section>
+
+                  <div style="
+                  margin: auto;
+                  width: 100%;
+                  padding-top: 2%;
+                  display: flex;
+                  gap: 4px;">
+                    <button onclick="window.location.href = 'index.html';"><- Back</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <script src="main.js"></script>
+</body>
+</html>
