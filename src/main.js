@@ -83,4 +83,3 @@ function tabHandler(e, tabButtons) {
         }
       });
     });
-  
