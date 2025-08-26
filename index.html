@@ -44,32 +44,30 @@
                         <ul class="tree-view has-container">
                             <li><strong>Welcome!</strong></li>
                             <li>I'm Bartłomiej <strong style="color: rgb(71,73,118)">"Squalish"</strong> L.</li>
-                            <li>I'm a 15 year old teenager from Poland and I usually code stuff and make music whenever I feel like it.</li>
+                            <li>I'm a 15-year-old teenager from Poland and I usually code stuff and make music whenever I feel like it.</li>
                             <li>Feel free to wander around this website if you want!</li>
                             <li>Please note that I do <strong>NOT</strong> do commissions or take requests.</li>
                         </ul>
-                        <div style="
-                        margin: auto;
-                        padding-top: 4px;
-                        display: flex;
-                        gap: 3px;
-                        justify-content: center;
-                        align-items: center;">
-                            <button onclick="OpenWindow(1);" style="width: 100px;">My Projects</button>
-                            <button onclick="OpenWindow(2);" style="width: 100px;">Platforms</button>
-                            <button onclick="OpenWindow(3);" style="width: 100px;">FAQ</button>
-                            <button onclick="OpenWindow(4);" style="width: 100px;">Credits</button>
+                        <div class="div-welcome-buttons">
+                            <button class="div-welcome-button" onclick="OpenWindow(2);">My Projects</button>
+                            <button class="div-welcome-button" onclick="OpenWindow(3);">Platforms</button>
+                        </div>
+                        <div class="div-welcome-buttons">
+                            <button class="div-welcome-button" onclick="OpenWindow(4);">FAQ</button>
+                            <button class="div-welcome-button" onclick="OpenWindow(5);">Guidelines</button>
+                            <button class="div-welcome-button" onclick="OpenWindow(6);">Credits</button>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <div class="main-content" id="projects-window" style="display: none;">
                 <div id="win2" class="window glass active" style="max-width: 640px; max-height: 480px;">
                         <div class="title-bar">
                             <div class="title-bar-text">My Projects</div>
                             <div class="title-bar-controls">
-                                <button aria-label="Close" onclick="CloseWindow(1);"></button>
+                                <button aria-label="Close" onclick="CloseWindow(2);"></button>
                             </div>
                         </div>
 
@@ -88,7 +86,7 @@
                                         <!-- keepyourselfsafe -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-Mkj04s0MWBqnD1qm-e3MJrg-t500x500.png" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-Mkj04s0MWBqnD1qm-e3MJrg-t500x500.png" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>Visual Artifacts</strong></p>
@@ -103,9 +101,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="div-music-info-platforms">
-                                                        <a href="https://push.fm/ps/visual-artifacts" id="visual-artifacts-pre-save" target="_blank" rel="noopener noreferrer">Pre-save</a>
                                                         <a href="https://push.fm/fl/visual-artifacts" id="visual-artifacts-listen" target="_blank" rel="noopener noreferrer">Listen</a>
-                                                        <p class="visual-artifacts-counter" id="visual-artifacts-counter">TIMER</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -114,7 +110,7 @@
                                         <!-- keepyourselfsafe -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-X74BhDCcQXoFbu8z-DYLNZw-t500x500.png" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-X74BhDCcQXoFbu8z-DYLNZw-t500x500.png" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>KYS</strong></p>
@@ -137,7 +133,7 @@
                                         <!-- rasterization -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-ofzTuN9MZPAlh0Bz-M73gUg-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-ofzTuN9MZPAlh0Bz-M73gUg-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>Rasterization</strong></p>
@@ -160,7 +156,7 @@
                                         <!-- endless storage -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-ana5zQyEStcSMpk9-5Fnq7g-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-ana5zQyEStcSMpk9-5Fnq7g-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>Endless Storage</strong></p>
@@ -183,7 +179,7 @@
                                         <!-- violence -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-2DqrxEznoi0dXya4-KMm58Q-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-2DqrxEznoi0dXya4-KMm58Q-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>Violence</strong></p>
@@ -213,7 +209,7 @@
                                         <!-- accuracy -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-smK8u4AREjzAlX6N-k5urHw-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-smK8u4AREjzAlX6N-k5urHw-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>Accuracy</strong></p>
@@ -223,7 +219,7 @@
                                                     </div>
                                                     <div class="div-music-info-description">
                                                         <div class="has-scrollbar" style="width: 340px; height: 68px; overflow: auto">
-                                                            Okay so uh... Idk what I can say about this one. I'm surprised that a few people actually like this considering that I wasn't really THAT good at making EDMs.
+                                                            Okay so uh... I don't know what I can say about this one. I'm surprised that a few people actually like this considering that I wasn't really THAT good at making EDMs.
                                                         </div>
                                                     </div>
                                                     <div class="div-music-info-platforms">
@@ -238,7 +234,7 @@
                                         <!-- accuracy -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-EZYPNdinFDi25zMy-EaoV0A-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-EZYPNdinFDi25zMy-EaoV0A-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>After Dark Night</strong></p>
@@ -260,10 +256,10 @@
                                             </div>
                                         </div>
 
-                                        <!-- baller (insturmental) -->
+                                        <!-- baller (instrumental) -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-szoXd80NAgW5cVGy-A9HYRg-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-szoXd80NAgW5cVGy-A9HYRg-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>Baller (Instrumental)</strong></p>
@@ -287,7 +283,7 @@
                                         <!-- baller -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-PH51XCbI4ZwwSIsq-dgug7w-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-PH51XCbI4ZwwSIsq-dgug7w-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>Baller</strong></p>
@@ -297,7 +293,7 @@
                                                     </div>
                                                     <div class="div-music-info-description">
                                                         <div class="has-scrollbar" style="width: 340px; height: 68px; overflow: auto">
-                                                            So basically. This was my last "Phonk House" music since that genre started to get repetetive and boring. Oh, yeah and It's basically based on a meme that used to be popular 2 years ago.
+                                                            So basically. This was my last "Phonk House" music since that genre started to get repetitive and boring. Oh, yeah and It's basically based on a meme that used to be popular 2 years ago.
                                                         </div>
                                                     </div>
                                                     <div class="div-music-info-platforms">
@@ -314,7 +310,7 @@
                                         <!-- forget -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-qHxuOyUUZ2MY298K-AaUdyw-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-qHxuOyUUZ2MY298K-AaUdyw-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>Forget</strong></p>
@@ -338,7 +334,7 @@
                                         <!-- this night (god why did I even think it was cool to just upload this one.) -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-pAIeTcMaP95b2lON-Q1nLAg-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-pAIeTcMaP95b2lON-Q1nLAg-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>This Night</strong></p>
@@ -362,7 +358,7 @@
                                         <!-- the haunted asylum (slowed) -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-SxbrqrSj9z0l195Z-Xy3yaA-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-SxbrqrSj9z0l195Z-Xy3yaA-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>The Haunted Asylum (Slowed)</strong></p>
@@ -386,7 +382,7 @@
                                         <!-- the haunted asylum -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-SxbrqrSj9z0l195Z-Xy3yaA-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-SxbrqrSj9z0l195Z-Xy3yaA-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>The Haunted Asylum</strong></p>
@@ -396,7 +392,7 @@
                                                     </div>
                                                     <div class="div-music-info-description">
                                                         <div class="has-scrollbar" style="width: 340px; height: 68px; overflow: auto">
-                                                            Originally this was supposed to have the "VIKTOR VIKTOR" meme sample for the whole song but I knew damn well that RouteNote would not let me put this so I removed the viktor.
+                                                            Originally this was supposed to have the "VIKTOR VIKTOR" meme sample for the whole song, but I knew damn well that RouteNote would not let me put this, so I removed the viktor.
                                                         </div>
                                                     </div>
                                                     <div class="div-music-info-platforms">
@@ -410,7 +406,7 @@
                                         <!-- lost in nightmares -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-ay1H3SikRE8uaVwQ-N9KZIw-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-ay1H3SikRE8uaVwQ-N9KZIw-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>Lost in Nightmares</strong></p>
@@ -434,7 +430,7 @@
                                         <!-- dark night -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-TCklDyVCMse8rvWx-fWQyoQ-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-TCklDyVCMse8rvWx-fWQyoQ-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>Dark Night</strong></p>
@@ -460,7 +456,7 @@
                                     <div class="has-scrollbar" style="width: 500px; height: 300px; overflow: auto">
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://tr.rbxcdn.com/054263d23bc23a4b6eb9710667ed5d19/150/150/Image/Webp" width="128" height="128" draggable="false">
+                                                <img alt="game icon" src="https://tr.rbxcdn.com/054263d23bc23a4b6eb9710667ed5d19/150/150/Image/Webp" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>Custom ROM Simulator</strong></p>
@@ -480,7 +476,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    </fieldset>
                                 </article>
                                 <article role="tabpanel" id="tab-C" hidden style="width: 490px; min-height: 300px; height: 300px">
                                     <div class="has-scrollbar" style="width: 500px; height: 300px; overflow: auto">
@@ -489,7 +484,7 @@
                                         <!-- dark night -->
                                         <div class="div-music">
                                             <div class="div-music-art-and-info">
-                                                <img src="https://i1.sndcdn.com/artworks-X8QE3RyvMeay0Xm1-E8tunw-t500x500.jpg" width="128" height="128" draggable="false">
+                                                <img alt="album cover" src="https://i1.sndcdn.com/artworks-X8QE3RyvMeay0Xm1-E8tunw-t500x500.jpg" width="128" height="128" draggable="false">
                                                 <div class="div-music-info">
                                                     <div class="div-music-info-name">
                                                         <p><strong>Certified Meow Classic</strong></p>
@@ -499,7 +494,7 @@
                                                     </div>
                                                     <div class="div-music-info-description">
                                                         <div class="has-scrollbar" style="width: 340px; height: 68px; overflow: auto">
-                                                            So me and some random furry Luckyoma (she's my wife now fr) I met decided to cook this but i kinda burned it so heres the burned banger ig.
+                                                            So me and some random furry Luckyoma (she's my wife now fr) I met decided to cook this, but I kinda burned it so here's the burned banger ig.
                                                             (yeah it is the The Living Tombstone - Cats melody)
                                                         </div>
                                                     </div>
@@ -522,7 +517,7 @@
                     <div class="title-bar">
                         <div class="title-bar-text">Platforms</div>
                         <div class="title-bar-controls">
-                            <button aria-label="Close" onclick="CloseWindow(2);"></button>
+                            <button aria-label="Close" onclick="CloseWindow(3);"></button>
                         </div>
                     </div>
                     <div class="window-body has-space" >
@@ -565,7 +560,7 @@
                                                 <a class="a-profile" href="https://www.youtube.com/@Squalish" target="_blank" rel="noopener noreferrer"></a>
                                             </div>
                                         </div>
-                                        <!-- My offtopic channel !-->
+                                        <!-- My off-topic channel !-->
                                         <div class="div-profile">
                                             <div class="div-profile-art-and-name">
                                                 <div class="div-platform-logo" style="background-color: #FF0000; fill: white;">
@@ -734,9 +729,9 @@
                         <div style="display: flex; column-gap: -12px; flex-direction: column; align-items: center; justify-content: center;">
                             <div style="display: flex; flex-direction: column; column-gap: 12px;" >
                                 <div style="height: 16px;"></div>
-                                <div style="display: inline-flex; height: 0px; flex-wrap: nowrap; align-items: center; justify-content: center; gap: 8px">
+                                <div style="display: inline-flex; height: 0; flex-wrap: nowrap; align-items: center; justify-content: center; gap: 8px">
                                     <p>You can also send me a mail through this address:</p>
-                                    <a href="mailto:contactsqualish@proton.me">contactsqualish@proton.me</a>
+                                    <a href="mailto:squalish@squalish.dev">squalish@squalish.dev</a>
                                 </div>
                                 <div style="height: 20px; flex-wrap: nowrap; align-items: center; justify-content: center; gap: 2px">
                                     <p>Go crazy with sending me questions, jokes, peak art, etc.</p>
@@ -756,7 +751,7 @@
                         <div class="title-bar">
                             <div class="title-bar-text">FAQ</div>
                             <div class="title-bar-controls">
-                                <button aria-label="Close" onclick="CloseWindow(3);"></button>
+                                <button aria-label="Close" onclick="CloseWindow(4);"></button>
                             </div>
                         </div>
 
@@ -770,7 +765,7 @@
 
                                 <details>
                                     <summary><strong style="color: Red">Q: How do you make music?</strong></summary>
-                                    <li><strong style="color: purple">A: I dunno honestly. All I do is add bunch of stuff till it becomes music.</strong></li>
+                                    <li><strong style="color: purple">A: I honestly don't know. All I do is add a bunch of stuff till it becomes music.</strong></li>
                                 </details>
 
                                 <details>
@@ -785,20 +780,53 @@
 
                                 <details>
                                     <summary><strong style="color: Red">Q: How did you make your PFP?</strong></summary>
-                                    <li><strong style="color: purple">A: I used Aseprite for the my pixelated S logo but for the furry one I used Roblox Studio, Blender and Godot Engine (With a bit of external shaders iykwim).</strong></li>
+                                    <li><strong style="color: purple">A: I used Aseprite for my pixelated S logo but for the furry one I used Roblox Studio, Blender and Godot Engine (With a bit of external shaders iykwim).</strong></li>
                                 </details>
-                            </ul>
                             </ul>
                         </div>
                     </div>
                 </div>
 
+            <div id="guidelines-window" class="main-content" style="display: none;">
+                <div id="win5" class="window glass active" style="min-width: 540px; max-width: 540px; max-height: 480px;">
+                    <div class="title-bar">
+                        <div class="title-bar-text">Guidelines</div>
+                        <div class="title-bar-controls">
+                            <button aria-label="Close" onclick="CloseWindow(5);"></button>
+                        </div>
+                    </div>
+
+                    <!-- TODO: change the FAQ page entirely. -->
+                    <div class="window-body has-space">
+                        <h3 class="text-guidelines">Here are the rules when using my videos/music.</h3>
+                        <div class="list">
+                            <p class="list-initial">1.</p>
+                            <p class="list-header"><b>Using my Music/Videos in your Videos/Livestreams</b></p>
+                            <p class="list-description">If you do decide to use any of my works, make sure you give me a credit. Also remember that you accept the risk of getting "Content ID'd".</p>
+                        </div>
+
+                        <div class="list">
+                            <p class="list-initial">2.</p>
+                            <p class="list-header"><b>Using my Music/Videos in your Other Projects (Games, School Projects etc.)</b></p>
+                            <p class="list-description">Same thing as the first rule but if you ever use any of my works in your projects then you accept the risk of getting others "Content ID'd".</p>
+                        </div>
+
+                        <div class="list">
+                            <p class="list-initial">3.</p>
+                            <p class="list-header"><b>Avoid Plagiarism</b></p>
+                            <p class="list-description">Please do <b>NOT</b> claim my work as yours. You did not make something I made, and you have <b>NO RIGHTS</b> to claim it as yours.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
             <div id="credits-window" class="main-content" style="display: none;">
-                    <div id="win5" class="window glass active" style="min-width: 540px; max-width: 540px; max-height: 480px;">
+                    <div id="win6" class="window glass active" style="min-width: 540px; max-width: 540px; max-height: 480px;">
                         <div class="title-bar">
                             <div class="title-bar-text">Credits</div>
                             <div class="title-bar-controls">
-                                <button aria-label="Close" onclick="CloseWindow(4);"></button>
+                                <button aria-label="Close" onclick="CloseWindow(6);"></button>
                             </div>
                         </div>
 
@@ -806,12 +834,11 @@
                             <ul class="tree-view has-container">
                                 <li><strong>Special thanks to those people that contributed to this site:</strong></li>
                                 <li><strong style="color: gray">Andrew1223</strong> and <strong style="color: gray">Morsz</strong> for helping me a bit with the site.</li>
-                                <li><strong style="color: gray">1JustJoey (AKA. just__joey)</strong> for showing me how to host a site using github.</li>
+                                <li><strong style="color: gray">1JustJoey (AKA. just__joey)</strong> for showing me how to host a site using GitHub.</li>
                                 <li><strong>Sites that made my job easier.</strong></li>
                                 <a href="https://khang-nd.github.io/7.css/" target="_blank" rel="noopener noreferrer"><strong style="color: blue">7.css</strong></a>
                                 <a href="https://simpleicons.org/" target="_blank" rel="noopener noreferrer"><strong style="color: blue">simpleicons</strong></a>
                                 <li></li>
-                            </ul>
                             </ul>
                         </div>
                     </div>
@@ -819,11 +846,10 @@
 
         </div>
     </main>
-    <!--<script src="https://pixijs.download/v7.4.2/pixi.js"></script>-->
-    <script src="src/main.js"></script>
+    <script src="src/control.js"></script>
     <script src="src/timer.js"></script>
     <script src="src/window.js"></script>
     <script src="src/draggable-window.js"></script>
-    <script src="src/mobilesupport.js"></script>
+    <script src="src/mobile-support.js"></script>
 </body>
 </html>

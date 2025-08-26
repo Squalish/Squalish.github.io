@@ -8,6 +8,8 @@ const meow = [
     "win3",
     "win4",
     "win5",
+    "win6",
+    "win7",
 ];
 
 function check()
