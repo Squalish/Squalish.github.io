@@ -30,12 +30,16 @@ function ChangeOrder() {
         window.classList.add("inactive");
     })
 
+    // re-order the z-index of every single window
     for (let i = 0; i < currentOrder.length; i++) {
         currentOrder[i].style.zIndex = i.toString();
 
+        // and then make the last one active
         if (i === currentOrder.length - 1) {
             currentOrder[i].firstElementChild.classList.remove("inactive");
             currentOrder[i].firstElementChild.classList.add("active");
+            console.log(windows[i].toString());
+            document.getElementById("site-title").innerText = "squalish.dev | "+currentOrder[i].getElementsByClassName("title-bar-text")[0].innerHTML;
         }
     }
 }
